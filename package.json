@@ -6,17 +6,30 @@
   "scripts": {
     "dev": "vite",
     "dev:extension": "vue-tsc --noEmit && vite build --watch",
-    "build:testbuild": "vue-tsc --noEmit && vite build",
-    "build": "bestzip dist.zip dist/",
-    "preview": "vite preview"
+    "build": "vue-tsc --noEmit && vite build",
+    "zip": "bestzip build.zip dist/*",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.vue src",
+    "fix": "eslint --fix --ext .ts,.vue,.js src"
   },
   "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-standard": "^5.0.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "bestzip": "^2.2.1",
-    "typescript": "^4.6.4",
+    "eslint": "^8.23.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-vue": "^9.4.0",
+    "typescript": "^4.8.3",
     "vite": "^3.1.0",
     "vue-tsc": "^0.40.4"
   }
