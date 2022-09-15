@@ -10,9 +10,11 @@
     "zip": "bestzip build.zip dist/*",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.vue src",
-    "fix": "eslint --fix --ext .ts,.vue,.js src"
+    "fix": "eslint --fix --ext .ts,.vue,.js src",
+    "host": "vite --host"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^5.37.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-standard": "^5.0.0",
