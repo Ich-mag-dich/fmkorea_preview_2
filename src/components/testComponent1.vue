@@ -26,5 +26,7 @@
     .testDiv {
         border-style: solid;
         border-width: 2px;
+        min-width: 300px;
+        border-radius: 5px;
     }
 </style>

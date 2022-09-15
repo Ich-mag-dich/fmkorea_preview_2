@@ -1,18 +1,18 @@
 <script lang="ts">
-import Home1 from './tabTest/Home1.vue'
-import Home2 from './tabTest/Home2.vue'
-import Home3 from './tabTest/Home3.vue'
+import Home from './tabTest/Home1Component.vue'
+import Test from './tabTest/Home2Component.vue'
+import About from './tabTest/Home3Component.vue'
 
 export default {
   components: {
-    Home1,
-    Home2,
-    Home3,
+    Home,
+    Test,
+    About,
   },
   data() {
     return {
-      currentTab: 'Home1',
-      tabs: ['Home1', 'Home2', 'Home3'],
+      currentTab: 'Home',
+      tabs: ['Home', 'Test', 'About'],
     }
   },
 }
@@ -28,6 +28,19 @@ export default {
     >
       {{ tab }}
     </button>
-    <component :is="currentTab" class="tab"></component>
+    <component :is="currentTab" class="tab" />
   </div>
 </template>
+
+<style>
+.demo {
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  min-height: 200px;
+}
+.tab-button {
+  margin-top: 20px;
+}
+</style>

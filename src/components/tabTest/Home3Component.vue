@@ -1,3 +1,3 @@
 <template>
-  <div class="tab">This is Home3 component</div>
+  <div class="tab">About</div>
 </template>
