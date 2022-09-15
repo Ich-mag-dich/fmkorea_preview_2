@@ -6,8 +6,8 @@ import Test2 from './components/testComponent2.vue'
 </script>
 <template>
   <div>
-    <Test2 />
     <Test1 test-message=" is it true? " />
+    <Test2 />
   </div>
 </template>
 

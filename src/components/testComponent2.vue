@@ -39,6 +39,7 @@ export default {
   border-width: 2px;
   border-radius: 5px;
   min-height: 200px;
+  margin-top: 30px;
 }
 .tab-button {
   margin-top: 20px;
